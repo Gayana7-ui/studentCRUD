@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Sync | Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Sync</h1>
+            <p>Manage your student database with ease</p>
+        </header>
+
+        <section class="add-student-card">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="number" id="age" placeholder="Age">
+                <input type="text" id="course" placeholder="Course / Major">
+                <input type="text" id="phone" placeholder="Phone Number">
+                <input type="text" id="id_num" placeholder="ID Number">
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+
+            <button id="add-btn" onclick="addStudent()">Add Student</button>
+        </section>
+
+
+        <section class="list-section">
+            <div class="list-header">
+                <h2>Registered Students</h2>
+                <span id="student-count">0 students</span>
+            </div>
+            <ul id="list" class="student-list">
+                <!-- Students will be injected here -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
